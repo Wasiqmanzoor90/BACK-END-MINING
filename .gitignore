@@ -1,0 +1,50 @@
+# Node modules
+/node_modules/
+
+# Ledger data
+ledger.json
+
+
+
+# Dependencies and package managers
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Testing
+/coverage/
+
+# Next.js
+/.next/
+/out/
+
+# Production builds
+/build/
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Env files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Vercel deployment
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
