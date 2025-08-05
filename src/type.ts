@@ -18,6 +18,7 @@ export interface PeerInfo {
     port: number;
     connected: boolean;
 }
+//Network
 export interface NetworkMessage {
     type: 'NEW_BLOCK' | 'REQUEST_CHAIN' | 'CHAIN_RESPONSE' | 'NEW_PEER' | 'PING';
     data: any;
