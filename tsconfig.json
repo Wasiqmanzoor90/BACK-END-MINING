@@ -11,7 +11,10 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,         // Helps with default import support
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+
   },
   "include": ["src/**/*", "src/test/blockchain.ts", "src/test/test.ts", "src/test/testWallet.ts", "src/test/server.ts"],
   "exclude": ["node_modules"]
