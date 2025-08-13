@@ -34,7 +34,7 @@ export class Block {
 
   calculateHash(): string {
     const str = this.index + this.timestamp + JSON.stringify(this.transactionData) + this.transactionData + this.previousHash + this.nonce
-    return crypto.createHash("sha256").update(str).digest("hex"); // this is generated hash with nonce  =0
+    return crypto.createHash("sha256").update(str).digest("hex"); // this is generated hash with nonce  = 0
   }
 
 
@@ -52,11 +52,15 @@ export class Block {
       console.log("⛏️ Mining... Nonce: " + this.nonce);
     }
 
+
     const endTime = Date.now();
+
 
     const timeTaken = endTime - startTime;
 
+
     console.log(`✅ Mined Block Hash: ${this.hash}`);
+
 
     console.log(`⏱️  Mining took ${timeTaken} ms`)
   }
